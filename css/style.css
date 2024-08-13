@@ -1,0 +1,60 @@
+
+.container {
+    margin: 2px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.qna_box {
+    padding: 20px;
+    background: #fffaaa;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    display: flex;
+}
+
+.qna_box span {
+    font-size: 25px;
+}
+
+.btn {
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-left: auto;
+    cursor: pointer;
+    background: darkcyan;
+    color: white;
+}
+
+.ans-container {
+    position: fixed;
+    width: 96%;
+    top: 20%;
+    left: 2%;
+    background: darkcyan;
+    border-radius: 10px;
+    border: 1px solid white;
+    visibility: hidden;
+}
+
+.ans-container .ans {
+    color: white;
+    padding: 2%;
+    font-size: 30px;
+}
+
+.close-btn {
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: white;
+    color: darkcyan;
+    margin-left: 90%;
+    margin-bottom: 20px;
+}
