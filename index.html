@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="qna_box">
+        <span>Name the software required to make a computer functional. Write down its two primary services.</span>
+        <button type="submit" class="btn" onclick="showAns('q1-ans')">View Answer</button>
+    </div>
+    <div class="ans-container" id="q1-ans">
+        <div class="ans">
+            <div>Operating system software is required to make a computer functional. Like - as Windows, Linux,
+                Macintosh, Ubuntu, Fedora, Android, iOS, etc.
+            </div>
+            <div>Its two primary functions are:</div>
+            <ul>
+                <li>The operating system manages other application programs.</li>
+                <li>Provides access and security to the users of the system.</li>
+            </ul>
+        </div>
+        <button type="button" class="close-btn" onclick="hideAns('q1-ans')">Close</button>
+    </div>
+</div>
+
+<script>
+
+    function showAns(id) {
+        let elem = document.getElementById(id)
+        elem.style.visibility = 'visible'
+        elem.style.position = 'relative'
+    }
+
+    function hideAns(id) {
+        let elem = document.getElementById(id)
+        elem.style.visibility = 'hidden'
+        elem.style.position = 'fixed'
+    }
+</script>
+
+</body>
+</html>
